@@ -85,6 +85,7 @@ function getPage(url, e) {
                 $('.nav-list > li:first').addClass('active');
             }
             $("#main-content-area").html(result);
+            $('body').removeClass('az-offcanvas');
             $('#status').fadeOut();
             $('#preloader').fadeOut('slow');
         }
